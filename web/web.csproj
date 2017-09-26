@@ -1,0 +1,613 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{F5DB40C6-9E75-4AE9-819E-A264C7485F0F}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>web</RootNamespace>
+    <AssemblyName>web</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <UseIISExpress>true</UseIISExpress>
+    <IISExpressSSLPort />
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="com.DAL.Base">
+      <HintPath>..\Reference\com.DAL.Base.dll</HintPath>
+    </Reference>
+    <Reference Include="com.Model.Base">
+      <HintPath>..\Reference\com.Model.Base.dll</HintPath>
+    </Reference>
+    <Reference Include="com.Utility">
+      <HintPath>..\Reference\com.Utility.dll</HintPath>
+    </Reference>
+    <Reference Include="DAL.ruanmou, Version=1.0.0.0, Culture=neutral, processorArchitecture=AMD64">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Reference\DAL.ruanmou.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="Model.ruanmou">
+      <HintPath>..\Reference\Model.ruanmou.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="CityWeather.aspx" />
+    <Content Include="CSS\demo.css" />
+    <Content Include="CSS\GuideList.css" />
+    <Content Include="CSS\TripListItem.css" />
+    <Content Include="CSS\UserBuyCar.css" />
+    <Content Include="CSS\UserLogin.css" />
+    <Content Include="CSS\ShopList.css" />
+    <Content Include="CSS\ShopOperaGuide.css" />
+    <Content Include="CSS\TripList.css" />
+    <Content Include="CSS\UserPay.css" />
+    <Content Include="CSS\UserSearch.css" />
+    <Content Include="GuideList.aspx" />
+    <Content Include="image\alipay.JPG" />
+    <Content Include="image\comp.jpg" />
+    <Content Include="image\C_sharp.jpg" />
+    <Content Include="image\database.jpg" />
+    <Content Include="image\html.jpg" />
+    <Content Include="image\java_web.jpg" />
+    <Content Include="include\nav1.html" />
+    <Content Include="index.aspx" />
+    <Content Include="JS\cookies.jquery.js" />
+    <Content Include="JS\demo.js" />
+    <Content Include="JS\AdminLogin.js" />
+    <Content Include="JS\jquery-3.2.0.min.js" />
+    <Content Include="JS\ShopperLogin.js" />
+    <Content Include="JS\TripListItem.js" />
+    <Content Include="JS\ULogin.js" />
+    <Content Include="JS\UserChange.js" />
+    <Content Include="JS\UserLogin.js" />
+    <Content Include="JS\ShopOperaGuide.js" />
+    <Content Include="JS\ShopOperaTrip.js" />
+    <Content Include="JS\UserSearch.js" />
+    <Content Include="layui\font\iconfont.eot" />
+    <Content Include="layui\font\iconfont.svg" />
+    <Content Include="layui\font\iconfont.ttf" />
+    <Content Include="layui\font\iconfont.woff" />
+    <Content Include="AdminLogin.aspx" />
+    <Content Include="ShopperLogin.aspx" />
+    <Content Include="ShopList.aspx" />
+    <Content Include="ShopOperaGuide.aspx" />
+    <Content Include="ShopOperaTrip.aspx" />
+    <Content Include="TripLiskItem.aspx" />
+    <Content Include="TripList.aspx" />
+    <Content Include="UserBuyCar.aspx" />
+    <Content Include="UserChange.aspx" />
+    <Content Include="UserLogin.aspx" />
+    <Content Include="UserPay.aspx" />
+    <Content Include="UserReg.aspx" />
+    <Content Include="UserSearch.aspx" />
+    <Content Include="weather\0.gif" />
+    <Content Include="weather\1.gif" />
+    <Content Include="weather\10.gif" />
+    <Content Include="weather\11.gif" />
+    <Content Include="weather\12.gif" />
+    <Content Include="weather\13.gif" />
+    <Content Include="weather\14.gif" />
+    <Content Include="weather\15.gif" />
+    <Content Include="weather\16.gif" />
+    <Content Include="weather\17.gif" />
+    <Content Include="weather\18.gif" />
+    <Content Include="weather\19.gif" />
+    <Content Include="weather\2.gif" />
+    <Content Include="weather\20.gif" />
+    <Content Include="weather\21.gif" />
+    <Content Include="weather\22.gif" />
+    <Content Include="weather\23.gif" />
+    <Content Include="weather\24.gif" />
+    <Content Include="weather\25.gif" />
+    <Content Include="weather\26.gif" />
+    <Content Include="weather\27.gif" />
+    <Content Include="weather\28.gif" />
+    <Content Include="weather\29.gif" />
+    <Content Include="weather\3.gif" />
+    <Content Include="weather\30.gif" />
+    <Content Include="weather\31.gif" />
+    <Content Include="weather\4.gif" />
+    <Content Include="weather\5.gif" />
+    <Content Include="weather\6.gif" />
+    <Content Include="weather\7.gif" />
+    <Content Include="weather\8.gif" />
+    <Content Include="weather\9.gif" />
+    <Content Include="weather\a_0.gif" />
+    <Content Include="weather\a_1.gif" />
+    <Content Include="weather\a_10.gif" />
+    <Content Include="weather\a_11.gif" />
+    <Content Include="weather\a_12.gif" />
+    <Content Include="weather\a_13.gif" />
+    <Content Include="weather\a_14.gif" />
+    <Content Include="weather\a_15.gif" />
+    <Content Include="weather\a_16.gif" />
+    <Content Include="weather\a_17.gif" />
+    <Content Include="weather\a_18.gif" />
+    <Content Include="weather\a_19.gif" />
+    <Content Include="weather\a_2.gif" />
+    <Content Include="weather\a_20.gif" />
+    <Content Include="weather\a_21.gif" />
+    <Content Include="weather\a_22.gif" />
+    <Content Include="weather\a_23.gif" />
+    <Content Include="weather\a_24.gif" />
+    <Content Include="weather\a_25.gif" />
+    <Content Include="weather\a_26.gif" />
+    <Content Include="weather\a_27.gif" />
+    <Content Include="weather\a_28.gif" />
+    <Content Include="weather\a_29.gif" />
+    <Content Include="weather\a_3.gif" />
+    <Content Include="weather\a_30.gif" />
+    <Content Include="weather\a_31.gif" />
+    <Content Include="weather\a_4.gif" />
+    <Content Include="weather\a_5.gif" />
+    <Content Include="weather\a_6.gif" />
+    <Content Include="weather\a_7.gif" />
+    <Content Include="weather\a_8.gif" />
+    <Content Include="weather\a_9.gif" />
+    <Content Include="weather\a_nothing.gif" />
+    <Content Include="weather\b_0.gif" />
+    <Content Include="weather\b_1.gif" />
+    <Content Include="weather\b_10.gif" />
+    <Content Include="weather\b_11.gif" />
+    <Content Include="weather\b_12.gif" />
+    <Content Include="weather\b_13.gif" />
+    <Content Include="weather\b_14.gif" />
+    <Content Include="weather\b_15.gif" />
+    <Content Include="weather\b_16.gif" />
+    <Content Include="weather\b_17.gif" />
+    <Content Include="weather\b_18.gif" />
+    <Content Include="weather\b_19.gif" />
+    <Content Include="weather\b_2.gif" />
+    <Content Include="weather\b_20.gif" />
+    <Content Include="weather\b_21.gif" />
+    <Content Include="weather\b_22.gif" />
+    <Content Include="weather\b_23.gif" />
+    <Content Include="weather\b_24.gif" />
+    <Content Include="weather\b_25.gif" />
+    <Content Include="weather\b_26.gif" />
+    <Content Include="weather\b_27.gif" />
+    <Content Include="weather\b_28.gif" />
+    <Content Include="weather\b_29.gif" />
+    <Content Include="weather\b_3.gif" />
+    <Content Include="weather\b_30.gif" />
+    <Content Include="weather\b_31.gif" />
+    <Content Include="weather\b_4.gif" />
+    <Content Include="weather\b_5.gif" />
+    <Content Include="weather\b_6.gif" />
+    <Content Include="weather\b_7.gif" />
+    <Content Include="weather\b_8.gif" />
+    <Content Include="weather\b_9.gif" />
+    <Content Include="weather\b_nothing.gif" />
+    <Content Include="weather\nothing.gif" />
+    <Content Include="weather\Read me.txt" />
+    <Content Include="weather\r_b.gif" />
+    <Content Include="weather\r_t1.gif" />
+    <Content Include="weather\tem1.gif" />
+    <Content Include="weather\tem2.gif" />
+    <Content Include="weather\tem3.gif" />
+    <Content Include="weather\tem4.gif" />
+    <Content Include="weather\tem5.gif" />
+    <Content Include="ajax\UserSearch.ashx" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Content Include="Web References\cn.com.webxml.www\Reference.map">
+      <Generator>MSDiscoCodeGenerator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </Content>
+    <None Include="Web References\cn.com.webxml.www\WeatherWebService.disco" />
+    <Content Include="WebForm1.aspx" />
+    <Content Include="Handler1.ashx" />
+    <Content Include="ajax\ShopAjax.ashx" />
+    <Content Include="ajax\shopregAjax.ashx" />
+    <Content Include="ajax\userregAjax.ashx" />
+    <Content Include="ajax\adminregAjax.ashx" />
+    <Content Include="ajax\buycarAjax.ashx" />
+    <None Include="Web References\cn.com.webxml.www\WeatherWebService.wsdl" />
+    <None Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+    <None Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="CSS\base.css" />
+    <Content Include="CSS\index.css" />
+    <Content Include="CSS\UserReg.css" />
+    <Content Include="image\1-1.jpg" />
+    <Content Include="image\1-2.jpg" />
+    <Content Include="image\1-3.jpg" />
+    <Content Include="image\1-4.jpg" />
+    <Content Include="image\1-5.jpg" />
+    <Content Include="image\1-6.jpg" />
+    <Content Include="image\1-7.jpg" />
+    <Content Include="image\1-8.jpg" />
+    <Content Include="image\ft-c1.jpg" />
+    <Content Include="image\ft-c2.jpg" />
+    <Content Include="image\ft-c3.jpg" />
+    <Content Include="image\ft-c4.jpg" />
+    <Content Include="image\ft-c5.jpg" />
+    <Content Include="image\ft-c6.jpg" />
+    <Content Include="image\ft-c7.jpg" />
+    <Content Include="image\ft-c8.jpg" />
+    <Content Include="image\icon1.png" />
+    <Content Include="image\icon2.png" />
+    <Content Include="image\icon3.png" />
+    <Content Include="image\icon4.png" />
+    <Content Include="image\icon5.png" />
+    <Content Include="image\icon6.png" />
+    <Content Include="image\icon7.png" />
+    <Content Include="image\login-pic.png" />
+    <Content Include="image\net-c1.jpg" />
+    <Content Include="image\net-c2.jpg" />
+    <Content Include="image\net-c3.jpg" />
+    <Content Include="image\net-c4.jpg" />
+    <Content Include="image\net-c5.jpg" />
+    <Content Include="image\net-c6.jpg" />
+    <Content Include="image\net-c7.jpg" />
+    <Content Include="image\net-c8.jpg" />
+    <Content Include="image\travellogo.jpg" />
+    <Content Include="image\wx.jpg" />
+    <Content Include="include\footer.html" />
+    <Content Include="include\header.html" />
+    <Content Include="include\headercon.html" />
+    <Content Include="include\nav.html" />
+    <Content Include="JS\base.js" />
+    <Content Include="JS\index.js" />
+    <Content Include="JS\UserReg.js" />
+    <Content Include="layui\css\layui.css" />
+    <Content Include="layui\css\layui.mobile.css" />
+    <Content Include="layui\css\modules\code.css" />
+    <Content Include="layui\css\modules\laydate\icon.png" />
+    <Content Include="layui\css\modules\laydate\laydate.css" />
+    <Content Include="layui\css\modules\layer\default\icon-ext.png" />
+    <Content Include="layui\css\modules\layer\default\icon.png" />
+    <Content Include="layui\css\modules\layer\default\layer.css" />
+    <Content Include="layui\css\modules\layer\default\loading-0.gif" />
+    <Content Include="layui\css\modules\layer\default\loading-1.gif" />
+    <Content Include="layui\css\modules\layer\default\loading-2.gif" />
+    <Content Include="layui\images\face\0.gif" />
+    <Content Include="layui\images\face\1.gif" />
+    <Content Include="layui\images\face\10.gif" />
+    <Content Include="layui\images\face\11.gif" />
+    <Content Include="layui\images\face\12.gif" />
+    <Content Include="layui\images\face\13.gif" />
+    <Content Include="layui\images\face\14.gif" />
+    <Content Include="layui\images\face\15.gif" />
+    <Content Include="layui\images\face\16.gif" />
+    <Content Include="layui\images\face\17.gif" />
+    <Content Include="layui\images\face\18.gif" />
+    <Content Include="layui\images\face\19.gif" />
+    <Content Include="layui\images\face\2.gif" />
+    <Content Include="layui\images\face\20.gif" />
+    <Content Include="layui\images\face\21.gif" />
+    <Content Include="layui\images\face\22.gif" />
+    <Content Include="layui\images\face\23.gif" />
+    <Content Include="layui\images\face\24.gif" />
+    <Content Include="layui\images\face\25.gif" />
+    <Content Include="layui\images\face\26.gif" />
+    <Content Include="layui\images\face\27.gif" />
+    <Content Include="layui\images\face\28.gif" />
+    <Content Include="layui\images\face\29.gif" />
+    <Content Include="layui\images\face\3.gif" />
+    <Content Include="layui\images\face\30.gif" />
+    <Content Include="layui\images\face\31.gif" />
+    <Content Include="layui\images\face\32.gif" />
+    <Content Include="layui\images\face\33.gif" />
+    <Content Include="layui\images\face\34.gif" />
+    <Content Include="layui\images\face\35.gif" />
+    <Content Include="layui\images\face\36.gif" />
+    <Content Include="layui\images\face\37.gif" />
+    <Content Include="layui\images\face\38.gif" />
+    <Content Include="layui\images\face\39.gif" />
+    <Content Include="layui\images\face\4.gif" />
+    <Content Include="layui\images\face\40.gif" />
+    <Content Include="layui\images\face\41.gif" />
+    <Content Include="layui\images\face\42.gif" />
+    <Content Include="layui\images\face\43.gif" />
+    <Content Include="layui\images\face\44.gif" />
+    <Content Include="layui\images\face\45.gif" />
+    <Content Include="layui\images\face\46.gif" />
+    <Content Include="layui\images\face\47.gif" />
+    <Content Include="layui\images\face\48.gif" />
+    <Content Include="layui\images\face\49.gif" />
+    <Content Include="layui\images\face\5.gif" />
+    <Content Include="layui\images\face\50.gif" />
+    <Content Include="layui\images\face\51.gif" />
+    <Content Include="layui\images\face\52.gif" />
+    <Content Include="layui\images\face\53.gif" />
+    <Content Include="layui\images\face\54.gif" />
+    <Content Include="layui\images\face\55.gif" />
+    <Content Include="layui\images\face\56.gif" />
+    <Content Include="layui\images\face\57.gif" />
+    <Content Include="layui\images\face\58.gif" />
+    <Content Include="layui\images\face\59.gif" />
+    <Content Include="layui\images\face\6.gif" />
+    <Content Include="layui\images\face\60.gif" />
+    <Content Include="layui\images\face\61.gif" />
+    <Content Include="layui\images\face\62.gif" />
+    <Content Include="layui\images\face\63.gif" />
+    <Content Include="layui\images\face\64.gif" />
+    <Content Include="layui\images\face\65.gif" />
+    <Content Include="layui\images\face\66.gif" />
+    <Content Include="layui\images\face\67.gif" />
+    <Content Include="layui\images\face\68.gif" />
+    <Content Include="layui\images\face\69.gif" />
+    <Content Include="layui\images\face\7.gif" />
+    <Content Include="layui\images\face\70.gif" />
+    <Content Include="layui\images\face\71.gif" />
+    <Content Include="layui\images\face\8.gif" />
+    <Content Include="layui\images\face\9.gif" />
+    <Content Include="layui\layui.js" />
+    <Content Include="layui\lay\dest\layui.all.js" />
+    <Content Include="layui\lay\modules\code.js" />
+    <Content Include="layui\lay\modules\element.js" />
+    <Content Include="layui\lay\modules\flow.js" />
+    <Content Include="layui\lay\modules\form.js" />
+    <Content Include="layui\lay\modules\jquery.js" />
+    <Content Include="layui\lay\modules\laydate.js" />
+    <Content Include="layui\lay\modules\layedit.js" />
+    <Content Include="layui\lay\modules\layer.js" />
+    <Content Include="layui\lay\modules\laypage.js" />
+    <Content Include="layui\lay\modules\laytpl.js" />
+    <Content Include="layui\lay\modules\mobile.js" />
+    <Content Include="layui\lay\modules\tree.js" />
+    <Content Include="layui\lay\modules\upload.js" />
+    <Content Include="layui\lay\modules\util.js" />
+    <Content Include="mg\image.aspx" />
+    <Content Include="Web.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="ajax\adminregAjax.ashx.cs">
+      <DependentUpon>adminregAjax.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="ajax\buycarAjax.ashx.cs">
+      <DependentUpon>buycarAjax.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="ajax\ShopAjax.ashx.cs">
+      <DependentUpon>ShopAjax.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="ajax\shopregAjax.ashx.cs">
+      <DependentUpon>shopregAjax.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="ajax\userregAjax.ashx.cs">
+      <DependentUpon>userregAjax.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="ajax\UserSearch.ashx.cs">
+      <DependentUpon>UserSearch.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="CityWeather.aspx.cs">
+      <DependentUpon>CityWeather.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="CityWeather.aspx.designer.cs">
+      <DependentUpon>CityWeather.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="GuideList.aspx.cs">
+      <DependentUpon>GuideList.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="GuideList.aspx.designer.cs">
+      <DependentUpon>GuideList.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Handler1.ashx.cs">
+      <DependentUpon>Handler1.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="index.aspx.cs">
+      <DependentUpon>index.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="index.aspx.designer.cs">
+      <DependentUpon>index.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="AdminLogin.aspx.cs">
+      <DependentUpon>AdminLogin.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AdminLogin.aspx.designer.cs">
+      <DependentUpon>AdminLogin.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+      <DependentUpon>Settings.settings</DependentUpon>
+    </Compile>
+    <Compile Include="ShopperLogin.aspx.cs">
+      <DependentUpon>ShopperLogin.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ShopperLogin.aspx.designer.cs">
+      <DependentUpon>ShopperLogin.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="mg\image.aspx.cs">
+      <DependentUpon>image.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="ShopList.aspx.cs">
+      <DependentUpon>ShopList.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ShopList.aspx.designer.cs">
+      <DependentUpon>ShopList.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ShopOperaGuide.aspx.cs">
+      <DependentUpon>ShopOperaGuide.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ShopOperaGuide.aspx.designer.cs">
+      <DependentUpon>ShopOperaGuide.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ShopOperaTrip.aspx.cs">
+      <DependentUpon>ShopOperaTrip.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ShopOperaTrip.aspx.designer.cs">
+      <DependentUpon>ShopOperaTrip.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="TripLiskItem.aspx.cs">
+      <DependentUpon>TripLiskItem.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="TripLiskItem.aspx.designer.cs">
+      <DependentUpon>TripLiskItem.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="TripList.aspx.cs">
+      <DependentUpon>TripList.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="TripList.aspx.designer.cs">
+      <DependentUpon>TripList.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="UserBuyCar.aspx.cs">
+      <DependentUpon>UserBuyCar.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UserBuyCar.aspx.designer.cs">
+      <DependentUpon>UserBuyCar.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="UserChange.aspx.cs">
+      <DependentUpon>UserChange.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UserChange.aspx.designer.cs">
+      <DependentUpon>UserChange.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="UserLogin.aspx.cs">
+      <DependentUpon>UserLogin.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UserLogin.aspx.designer.cs">
+      <DependentUpon>UserLogin.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="UserPay.aspx.cs">
+      <DependentUpon>UserPay.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UserPay.aspx.designer.cs">
+      <DependentUpon>UserPay.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="UserReg.aspx.cs">
+      <DependentUpon>UserReg.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UserReg.aspx.designer.cs">
+      <DependentUpon>UserReg.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="UserSearch.aspx.cs">
+      <DependentUpon>UserSearch.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UserSearch.aspx.designer.cs">
+      <DependentUpon>UserSearch.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Web References\cn.com.webxml.www\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.map</DependentUpon>
+    </Compile>
+    <Compile Include="WebForm1.aspx.cs">
+      <DependentUpon>WebForm1.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WebForm1.aspx.designer.cs">
+      <DependentUpon>WebForm1.aspx</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Service References\" />
+  </ItemGroup>
+  <ItemGroup>
+    <WebReferences Include="Web References\" />
+  </ItemGroup>
+  <ItemGroup>
+    <WebReferenceUrl Include="http://www.webxml.com.cn/WebServices/WeatherWebService.asmx">
+      <UrlBehavior>Dynamic</UrlBehavior>
+      <RelPath>Web References\cn.com.webxml.www\</RelPath>
+      <UpdateFromURL>http://www.webxml.com.cn/WebServices/WeatherWebService.asmx</UpdateFromURL>
+      <ServiceLocationURL>
+      </ServiceLocationURL>
+      <CachedDynamicPropName>
+      </CachedDynamicPropName>
+      <CachedAppSettingsObjectName>Settings</CachedAppSettingsObjectName>
+      <CachedSettingsPropName>web_cn_com_webxml_www_WeatherWebService</CachedSettingsPropName>
+    </WebReferenceUrl>
+  </ItemGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>True</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>12457</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>http://localhost:12443/</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

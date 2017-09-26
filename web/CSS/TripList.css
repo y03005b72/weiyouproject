@@ -1,0 +1,81 @@
+﻿#newsmain {
+    width: 1000px;
+    margin: 0px auto;
+}
+
+    #newsmain .crumbs {
+        height: 46px;
+        width: 1000px;
+        line-height: 46px;
+        color: #BBBBBB;
+        border-bottom: solid 2px #70B69B;
+    }
+
+.tripcard {
+    position:relative;
+    width:1000px;
+    height:160px;
+    margin-top:20px;
+    cursor:pointer;
+    margin:0px auto;
+}
+
+.trippicture {
+    position:relative;
+    width:437px;
+    height:160px;
+    float:left;
+}
+
+.trippicture img{
+    height:100%;
+}
+
+.triptitle {
+    position:relative;
+    width:563px;
+    height:20px;
+    float:left;
+    text-align:center;
+    margin-top:15px;
+}
+
+.tripcontent {
+    position:relative;
+    width:543px;
+    height:80px;
+    float:left;
+    margin-top:15px;
+    margin-left:10px;
+}
+
+.tripprice {
+    position:relative;
+    width:200px;
+    height:40px;
+    float:left;
+    margin-top:10px;
+    margin-left:100px;
+    color:#ff0000;
+}
+
+.tripcount {
+    position:relative;
+    width:200px;
+    height:40px;
+    float:right;
+    margin-top:10px;
+}
+
+#inforbox {
+    clear:left;
+    top:10px;
+}
+
+#headerright1 {
+    display:none;
+}
+
+#headerright2 {
+    display:block;
+}

@@ -1,0 +1,23 @@
+﻿* {
+    list-style-type:none;
+}
+
+#txtTitle {
+    width:300px;
+    height:24px;
+}
+
+#dcon {
+    width:303px;
+    border:solid 1px #ccc;
+    border-top-width:0px;
+}
+
+    #dcon li {
+        font-size:14px;
+        line-height:25px;
+    }
+
+.bg {
+    background-color:#efb9b9;
+}

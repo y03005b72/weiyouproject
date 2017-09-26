@@ -1,0 +1,18 @@
+﻿.tripcard {
+    margin-top:20px;
+    box-shadow: 2px 10px 10px #ccc;
+    cursor:default;
+}
+
+.tripcount {
+    color:blue;
+    cursor:pointer;
+}
+
+#headerright1 {
+    display:none;
+}
+
+#headerright2 {
+    display:block;
+}

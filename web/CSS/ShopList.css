@@ -1,0 +1,63 @@
+﻿#newsmain {
+    width: 1000px;
+    margin: 0px auto;
+}
+
+    #newsmain .crumbs {
+        height: 46px;
+        width: 1000px;
+        line-height: 46px;
+        color: #BBBBBB;
+        border-bottom: solid 2px #70B69B;
+    }
+
+.shopcard {
+    position:relative;
+    width:1000px;
+    height:220px;
+    margin-top:20px;
+    cursor:pointer;
+}
+
+.shopname {
+    text-align:center;
+    position:relative;
+    float:left;
+    width:1000px;
+    height:40px;
+}
+
+.shopdp {
+    position:relative;
+    width:140px;
+    height:140px;
+    float:left;
+    margin-left:20px;
+    margin-top:20px;
+}
+
+.shopdp  img{
+    height:100%;
+}
+
+.shopcontent {
+    text-align:center;
+    position:relative;
+    width:820px;
+    height:180px;
+    float:left;
+    margin-left:20px;
+}
+
+#inforbox {
+    clear:left;
+    top:10px;
+}
+
+#headerright1 {
+    display:none;
+}
+
+#headerright2 {
+    display:block;
+}

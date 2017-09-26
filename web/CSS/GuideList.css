@@ -1,0 +1,73 @@
+﻿#newsmain {
+    width: 1000px;
+    margin: 0px auto;
+}
+
+    #newsmain .crumbs {
+        height: 46px;
+        width: 1000px;
+        line-height: 46px;
+        color: #BBBBBB;
+        border-bottom: solid 2px #70B69B;
+    }
+
+.guidecard {
+    position:relative;
+    width:1000px;
+    height:180px;
+    margin-top:20px;
+    cursor:pointer;
+}
+
+.guidedp {
+    position:relative;
+    width:140px;
+    height:140px;
+    float:left;
+    margin-left:20px;
+    margin-top:20px;
+}
+
+    .guidedp img {
+        height:100%;
+    }
+
+.guidecardId {
+    position:relative;
+    width:200px;
+    height:40px;
+    float:left;
+    margin-left:40px;
+    margin-top:20px;
+    line-height:40px;
+}
+.guidename {
+    position:relative;
+    width:200px;
+    height:40px;
+    float:right;
+    margin-right:20px;
+    margin-top:20px;
+    line-height:40px;
+}
+.guideintroduce {
+    position:relative;
+    width:780px;
+    height:80px;
+    float:left;
+    margin-left:40px;
+    margin-top:20px;
+}
+
+#inforbox {
+    clear:left;
+    top:10px;
+}
+
+#headerright1 {
+    display:none;
+}
+
+#headerright2 {
+    display:block;
+}
